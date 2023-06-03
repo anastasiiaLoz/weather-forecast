@@ -1,0 +1,97 @@
+.buttonToShow {
+  width: 126px;
+  height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  background: $transparent-button-background;
+  border-radius: 20px;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  &.active {
+    background-color: $white-background;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+.buttonBox {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px){
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px){
+    margin-top: 20px;
+    margin-bottom: unset;
+  }
+}
+
+
+// .detals {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+//   padding-top: 20px;
+//   overflow-x: scroll;
+//   padding-bottom: 20px;
+
+//   &-column {
+//     border: 1px solid rgba(255, 255, 255, 0.2);
+//     width: 120px;
+//     border-radius: 25px;
+//     padding: 15px 16px;
+//     // margin-right: 20px;
+//     &:not(:last-child) {
+//       margin-right: 20px;
+//     }
+//     &-time {
+//       font-size: 14px;
+//       line-height: 1.21em;
+//       align-items: center;
+//       text-align: center;
+//       color: #ffffff;
+//       opacity: 0.54;
+//     }
+//     &-icon {
+//       margin-left: 20px;
+//       margin-top: 10px;
+//     }
+//     &-temperature {
+//       font-weight: 700;
+//       font-size: 18px;
+//       line-height: 1.22em;
+//       text-align: center;
+
+//       color: $orange-color;
+//       padding-top: 10px;
+//       padding-bottom: 10px;
+//     }
+//   }
+// }
+// .list {
+//   &-item {
+//     display: flex;
+//     &-number {
+//       margin-left: 10px;
+//       font-size: 14px;
+//       line-height: 1.21em;
+//       color: #ffffff;
+//       opacity: 0.54;
+//     }
+//     &-icon {
+//       fill: rgba(255, 255, 255, 0.54);
+//       margin-bottom: 5px;
+//     }
+//   }
+// }

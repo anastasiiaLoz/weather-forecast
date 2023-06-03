@@ -1,0 +1,79 @@
+.favoriteBox {
+  display: flex;
+  margin: 15px auto 0;
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 490px;
+  }
+
+  .city_list {
+    overflow: scroll;
+    display: flex;
+
+    &.city_list::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      // max-width: 472x;
+    }
+
+    @media screen and (min-width: 1280px) {
+      // max-width: 520px;
+    }
+
+    .list_item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 20px;
+      background-color: $box-cuntry-background;
+      min-width: 72px;
+      height: 28px;
+      margin-right: 10px;
+    }
+    .list_item_name {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 0.85;
+      color: $white-font-color;
+      border-bottom: 1px solid $white-font-color;
+      width: 45px;
+      height: 15px;
+      text-align: center;
+      margin-left: 5px;
+    }
+    .close {
+      // position: absolute;
+      right: 12px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        fill: $transparent-button-background;
+        width: 12px;
+        height: 12px;
+        &:hover {
+          fill: $black-font-color;
+        }
+      }
+    }
+  }
+}
+
+.favBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: $transparent-pointer-button;
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}

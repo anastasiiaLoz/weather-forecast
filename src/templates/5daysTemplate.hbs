@@ -1,0 +1,46 @@
+<h1 class="contentBox-location"></h1>
+
+<div class="contentBox-cont">
+
+    <div class="siema">
+        {{#each this}}
+
+        <div class="contentBox-cont-box">
+            <h2 class="contentBox-cont-box-day">{{dayOfWeek}}</h2>
+            <h3 class="contentBox-cont-box-date">{{day}} {{month}}</h3>
+            <svg class="contentBox-cont-box-icon" width="35" height="35">
+                <use href="./images/symbol-defs.svg#{{dayWeatherIcon}}"></use>
+            </svg>
+            <div class="contentBox-cont-box-cont">
+                <div class="contentBox-cont-box-cont-box1">
+                    <p class="contentBox-cont-box-cont-min">min</p>
+                    <p class="contentBox-cont-box-cont-minnumb">{{dayMinTemp}}&deg;</p>
+                </div>
+                <div class="contentBox-cont-box-cont-box2">
+                    <p class="contentBox-cont-box-cont-max">max</p>
+                    <p class="contentBox-cont-box-cont-maxnumb">{{dayMaxTemp}}&deg;</p>
+                </div>
+            </div>
+            <button class="contentBox-cont-box-moreInfo" data-set='{{elementIndex}}'>more info</button>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</div>
+
+
+<div class="contentBox-button">
+    <button type="button" data-action="right" class="contentBox-button-arrow">
+        <svg width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+        </svg>
+    </button>
+    <button type="button" data-action="left" class="contentBox-button-arrow">
+        <svg width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+        </svg>
+    </button>
+</div>
+<div class="forMoreInfo"></div>

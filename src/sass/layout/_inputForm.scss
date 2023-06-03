@@ -1,0 +1,107 @@
+// Input-serch
+.input-box {
+  margin: 30px auto 0;
+  position: relative;
+  min-width: 280px;
+  height: 48px;
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+   @media (min-width: 1280px) {
+    width: 520px;
+  }
+  
+}
+.inputForm {
+  width: -webkit-fill-available;
+  height: 48px;
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+   @media (min-width: 1280px) {
+    width: 520px;
+  }
+}
+.search-box {
+  padding-left: 57px;
+  width: inherit;
+  height: 48px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  @media (min-width: 768px) {
+    width: 500px;
+    font-size: 18px;
+  }
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+   @media (min-width: 1280px) {
+    width: 520px;
+  }
+
+  &::placeholder {
+    color: $black-font-color;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+//star checkbox
+.star {
+  right: 19px;
+  top: 12px;
+  position: absolute;
+  color: $gray-font-color;
+  visibility: hidden;
+  font-size: 30px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  &:hover {
+    color: $black-font-color;
+  }
+  &:before {
+    content: '☆';
+    top: -7px;
+    // left: -58.5px;
+    position: absolute;
+    visibility: visible;
+  }
+  &:checked:before {
+    content: '★';
+    position: absolute;
+  }
+}
+// Location-Button
+.locationBtn {
+  z-index: 1;
+  top: 13px;
+  left:14px;
+  position: absolute;
+  fill: $gray-font-color;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    fill: $black-font-color;
+  }
+  svg {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+  }
+}

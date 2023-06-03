@@ -1,0 +1,233 @@
+.weatherBox {
+  display: flex;
+  align-items: center;
+}
+.firstPart {
+  margin-top: 45px;
+  min-width: 280px;
+  height: 190px;
+  background: #102136;
+  box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
+  border-radius: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 300px;
+    margin-top: 110px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 100%;
+    width: 450px;
+    margin-top: 92px;
+  }
+  &-icon {
+    width: 35px;
+    height: 35px;
+  }
+  &-location {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.1875em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #767d85;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &-temperature {
+    width: 160px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-max,
+    &-min {
+      margin-bottom: 3px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-main {
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 1.2em;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      @media screen and (min-width: 768px) {
+        font-size: 90px;
+      }
+    }
+    &-box {
+      display: flex;
+      text-align: center;
+    }
+    &-box1,
+    &-box2 {
+      font-size: 14px;
+      line-height: 1.21;
+      color: #767d85;
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    &-box1 {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #27384a;
+      @media screen and (min-width: 768px) {
+        margin-right: 20px;
+        padding-right: 20px;
+      }
+    }
+    &-minnumb,
+    &-maxnumb {
+      font-size: 16px;
+      line-height: 1.19;
+      color: #ffffff;
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+//___________second part_______
+
+.secondPartBox {
+  width: 280px;
+  background: rgba(16, 33, 54, 0.6);
+  border-radius: 34px;
+  box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 65%;
+    width: 630px;
+    border-top-right-radius: 34px;
+  }
+  &-date {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 1.2em;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      font-size: 90px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 388px;
+      text-align: start;
+    }
+  }
+  &-combi {
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 40px;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+  &-dateBox {
+    width: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 193px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 40px;
+      padding: 0;
+    }
+
+    padding-top: 10px;
+    &-month {
+      margin-right: 10px;
+      width: 97px;
+
+      border-right: 1px solid #ffffff;
+    }
+    &-month,
+    &-time {
+      font-size: 14px;
+      line-height: 1.21em;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+  &-sun {
+    width: 158px;
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      width: 200px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0;
+    }
+    &-sunrise {
+      margin-right: 10px;
+      padding-right: 11px;
+
+      border-right: 1px solid #ffffff;
+      @media screen and (min-width: 768px) {
+        padding-right: 16px;
+      }
+    }
+    &-sunrise,
+    &-sunset {
+      display: flex;
+      align-items: center;
+
+      font-size: 14px;
+      line-height: 1.21em;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    &-icon,
+    &-icon {
+      margin-right: 10px;
+    }
+    & use {
+      fill: #ff6b09;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="detals">
+    {{#each this}}
+    <div class="detals-column">
+        <p class="detals-column-time">{{time}}</p>
+        <svg class="detals-column-icon" width="35" height="35">
+            <use href="./images/symbol-defs.svg#{{weatherIcon}}"></use>
+        </svg>
+        <p class="detals-column-temperature">{{temp}}&deg;</p>
+        <ul class="list">
+            <li class="list-item">
+                <svg class="list-item-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-barometr"></use>
+                </svg>
+                <p class="list-item-number">{{pressure}} mm</p>
+            </li>
+            <li class="list-item">
+                <svg class="list-item-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-kaplya"></use>
+                </svg>
+                <p class="list-item-number">{{humidity}}%</p>
+            </li>
+            <li class="list-item">
+                <svg class="list-item-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-wind"></use>
+                </svg>
+                <p class="list-item-number">{{windSpeed}} m/s</p>
+            </li>
+        </ul>
+    </div>
+    {{/each}}
+</div>

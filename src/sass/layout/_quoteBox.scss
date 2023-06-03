@@ -1,0 +1,68 @@
+.quoteBox {
+  width: 280px;
+  padding: 30px 20px 0;
+
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $white-font-color;
+
+  @media screen and (min-width: 768px) {
+    width: 380px;
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+
+    float: right;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 340px;
+    margin-top: -20%;
+    margin-left: 74%;
+    padding: 0;
+  }
+}
+
+.quoteIcon {
+  margin-bottom: -13px;
+  top: 15px;
+  left: 238px;
+
+  width: 22px;
+  height: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 49px;
+    height: 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: -30px;
+  }
+}
+.quoteIcon use {
+  justify-content: right;
+  display: block;
+
+  background: $white-font-color;
+  opacity: 0.2;
+}
+
+.quote {
+  padding-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 30px;
+  }
+}
+
+.quoteAuthor {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+}

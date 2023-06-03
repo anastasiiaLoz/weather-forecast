@@ -1,0 +1,21 @@
+//MODERN-NORMILIZE
+@import './utils/modern-normilize';
+
+//VARIABLES
+@import './variables/variables';
+
+//BASE
+@import './base/common';
+@import './base/container';
+
+//COMPONENTS
+
+//LAYOUT
+@import './layout/inputForm';
+@import './layout/weatherBox';
+@import './layout/additionalInfo';
+@import './layout/quoteBox';
+@import './layout/scroll-countries';
+@import './layout/chartLayout';
+@import './layout/currentWeather';
+@import './layout/fiveDays';

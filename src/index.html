@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Webpack Starter Kit</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="container">
+    <div class="input-box">
+      <button class="locationBtn">
+        <svg class="svg">
+          <use href="./images/symbol-defs.svg#icon-location"></use>
+        </svg>
+      </button>
+      <form class="inputForm">
+        <input class="search-box" type="text" placeholder="Enter the city" />
+        <input class="star" type="checkbox" />
+      </form>
+    </div>
+    <div class="favoriteBox">
+      <ul class="city_list">
+
+      </ul>
+      <button class="favBtn">
+        <svg>
+          <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="weatherBox">
+      <div class="buttonBox positionBtn">
+        <button class="buttonToShow" data-action="today">today</button>
+        <button class="buttonToShow" data-action="fiveDays">5 days</button>
+      </div>
+      <div class="contentBox" id="conBox"></div>
+    </div>
+
+    <div class="additionalInfo"></div>
+
+  </section>
+</body>
+
+</html>
